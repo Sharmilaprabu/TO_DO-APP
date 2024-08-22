@@ -8,37 +8,40 @@ body {
     margin: 0;
 }
 
-.todo-container {
-    background-color: #fff;
+.container {
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
+    margin-bottom: 20px;
     color: #333;
 }
 
-form {
+.input-group {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 input[type="text"] {
-    width: 70%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 4px;
+    width: 70%;
 }
 
 button {
-    padding: 10px;
+    padding: 10px 15px;
     background-color: #28a745;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 4px;
+    margin-left: 5px;
     cursor: pointer;
 }
 
@@ -52,13 +55,15 @@ ul {
 }
 
 li {
-    background-color: #f8f9fa;
     padding: 10px;
-    margin: 5px 0;
-    border-radius: 4px;
+    border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
 }
 
 li.completed {
@@ -68,10 +73,10 @@ li.completed {
 
 .delete-btn {
     background-color: #dc3545;
-    color: #fff;
+    color: white;
     border: none;
-    border-radius: 4px;
     padding: 5px 10px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
